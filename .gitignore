@@ -37,15 +37,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# ==================================================== #
-#                        MAGENTO                       #
-# ==================================================== #
-
 # Hide all files under the root directory
 /*
 
 # Except this file
 !/.gitignore
+
+# ==================================================== #
+#                        MAGENTO                       #
+# ==================================================== #
 
 # Hide out all code, allowing easy targeting of both
 # community and local modules that can't be
