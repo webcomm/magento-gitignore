@@ -1,0 +1,177 @@
+# ==================================================== #
+#                _                                     #
+#               | |                                    #
+#  __      _____| |__   ___ ___  _ __ ___  _ __ ___    #
+#  \ \ /\ / / _ \ '_ \ / __/ _ \| '_ ` _ \| '_ ` _ \   #
+#   \ V  V /  __/ |_) | (_| (_) | | | | | | | | | | |  #
+#    \_/\_/ \___|_.__/ \___\___/|_| |_| |_|_| |_| |_|  #
+#      Copyright (c) 2011-2014 Webcomm Pty Limited     #
+#                                                      #
+# ==================================================== #
+
+# ==================================================== #
+#                        GLOBAL                        #
+#                          --                          #
+#               See http://goo.gl/EpCdmV               #
+# ==================================================== #
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ==================================================== #
+#                        MAGENTO                       #
+# ==================================================== #
+
+# Hide all files under the root directory
+/*
+
+# Except this file
+!/.gitignore
+
+# Hide out all code, allowing easy targeting of both
+# community and local modules that can't be
+# installed with Composer.
+!/app/
+/app/*
+!/app/code/
+/app/code/*
+!/app/code/community/
+/app/code/community/*/*
+!/app/code/local/
+/app/code/local/*/*
+
+# Same concept for code will apply to the adminhtml
+# design files.
+!/app/design/
+/app/design/*
+!/app/design/adminhtml/
+/app/design/adminhtml/default/default/layout/*
+/app/design/adminhtml/default/default/locale/*
+/app/design/adminhtml/default/default/template/*
+
+# With frontend design files, we need to structure
+# the ignore rules so people running their own
+# packages or a package under default are
+# covered.
+!/app/design/frontend/
+/app/design/frontend/*
+!/app/design/adminhtml/base/
+/app/design/adminhtml/base/default/etc/*
+/app/design/adminhtml/base/default/layout/*
+/app/design/adminhtml/base/default/template/*
+!/app/design/frontend/default/
+/app/design/frontend/default/*
+
+# You must opt-in to module declaration files
+!/app/etc/
+/app/etc/*
+!/app/etc/modules/
+/app/etc/modules/*
+
+# In addition to allowing translation files, we
+# need to structure the ignore rules for easy
+# inclusion of email templates.
+!/app/locale/
+/app/locale/*/*
+!/app/locale/*/template
+/app/locale/*/template/email/*
+
+# An often overlooked design component of a Magento
+# website is overriding the fatal error handling,
+# consider making your own error skin.
+!/errors/
+/errors/*
+
+# Some modules add their JavaScript files to the
+# root "js" directory.
+!/js/
+/js/*
+
+# Many modules will include autoloaded libraries
+# under the root "lib" directory. In particular,
+# many modules will override or add new form
+# element objects.
+!/lib/
+/lib/*
+!/lib/Varien/
+/lib/Varien/*
+!/lib/Varien/Data/
+/lib/Varien/Data/*
+!/lib/Varien/Data/Form/
+/lib/Varien/Data/Form/*
+!/lib/Varien/Data/Form/Element/
+/lib/Varien/Data/Form/Element/*
+
+# Many people choose to opt-in their "wysiwyg"
+# directory into version control,
+# but not all.
+!/media/
+/media/*
+
+# The same principle applied to design files
+# needs to be applied to their "skin"
+# counterparts.
+!/skin/
+/skin/*
+!/skin/adminhtml/
+/skin/adminhtml/default/default/*
+!/skin/adminhtml/default/default/images/
+/skin/adminhtml/default/default/images/*
+!/skin/frontend/
+/skin/frontend/*
+!/skin/frontend/base/
+/skin/frontend/base/default/*
+!/skin/frontend/base/default/css/
+/skin/frontend/base/default/css/*
+!/skin/frontend/base/default/images/
+/skin/frontend/base/default/images/*
+!/skin/frontend/base/default/js/
+/skin/frontend/base/default/js/*
+!/skin/frontend/default/
+/skin/frontend/default/*
+
+# ==================================================== #
+#    INCLUDE YOUR THEME DECLARATION AS A EXCLUSIONS    #
+#                          --                          #
+#           This works for whole packages or           #
+#               varients under "default".              #
+# ==================================================== #
+
+# !/app/design/frontend/mytheme
+# !/skin/frontend/mytheme
+
+# ==================================================== #
+#          INCLUDE MODULE FILES AS EXCLUSIONS          #
+#                          --                          #
+#        Ideally you would install via Composer        #
+#          and not as ignore rule exclusions.          #
+# ==================================================== #
+
+# !/app/code/local/Foo/Bar
+# !/app/design/frontend/base/default/layout/foo_bar.xml
+# !/app/design/frontend/base/default/template/foo_bar/
+# !/app/etc/modules/Foo_Bar.xml
+# !/app/locale/en_US/Foo_Bar.csv
+# !/app/locale/en_US/template/email/foo_bar.html
+# !/js/foo_bar/
+# !/skin/frontend/base/default/css/foo_bar.css
+# !/skin/frontend/base/default/images/foo_bar/
