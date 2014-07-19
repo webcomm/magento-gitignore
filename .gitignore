@@ -37,11 +37,18 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Misc
+.sass-cache
+
 # Hide all files under the root directory
 /*
 
 # Except this file
 !/.gitignore
+
+# And Composer-related resources
+!/composer.json
+!/composer.lock
 
 # ==================================================== #
 #                        MAGENTO                       #
@@ -64,6 +71,7 @@ Temporary Items
 !/app/design/
 /app/design/*
 !/app/design/adminhtml/
+/app/design/adminhtml/default/default/etc/*
 /app/design/adminhtml/default/default/layout/*
 /app/design/adminhtml/default/default/locale/*
 /app/design/adminhtml/default/default/template/*
@@ -74,10 +82,10 @@ Temporary Items
 # covered.
 !/app/design/frontend/
 /app/design/frontend/*
-!/app/design/adminhtml/base/
-/app/design/adminhtml/base/default/etc/*
-/app/design/adminhtml/base/default/layout/*
-/app/design/adminhtml/base/default/template/*
+!/app/design/frontend/base/
+/app/design/frontend/base/default/etc/*
+/app/design/frontend/base/default/layout/*
+/app/design/frontend/base/default/template/*
 !/app/design/frontend/default/
 /app/design/frontend/default/*
 
@@ -153,7 +161,8 @@ Temporary Items
 #    INCLUDE YOUR THEME DECLARATION AS A EXCLUSIONS    #
 #                          --                          #
 #           This works for whole packages or           #
-#               varients under "default".              #
+#          varients under "default". Consider          #
+#           putting supporting modules here.           #
 # ==================================================== #
 
 # !/app/design/frontend/mytheme
