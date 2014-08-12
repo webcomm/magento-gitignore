@@ -165,8 +165,8 @@ Temporary Items
 #           putting supporting modules here.           #
 # ==================================================== #
 
-# !/app/design/frontend/mytheme
-# !/skin/frontend/mytheme
+# !/app/design/frontend/mytheme/
+# !/skin/frontend/mytheme/
 
 # ==================================================== #
 #          INCLUDE MODULE FILES AS EXCLUSIONS          #
