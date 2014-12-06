@@ -27,6 +27,10 @@
 !/composer.lock
 !/package.json
 
+# Gulp/Magento Boilerplate files
+!/config.json
+!/gulpfile.js
+
 # ==================================================== #
 #                        MAGENTO                       #
 # ==================================================== #
