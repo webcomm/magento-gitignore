@@ -21,9 +21,11 @@
 # Except this file
 !/.gitignore
 
-# And Composer-related resources
+# And package manager files
+!/bower.json
 !/composer.json
 !/composer.lock
+!/package.json
 
 # ==================================================== #
 #                        MAGENTO                       #
